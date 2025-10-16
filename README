@@ -1,0 +1,29 @@
+# Upload de Arquivos Local para Google Cloud Storage
+
+Este projeto contém um script Python que faz o upload de arquivos de um diretório local para um **Google Cloud Storage Bucket**. O script percorre recursivamente todos os arquivos e subpastas de um diretório local e os envia para o bucket no Google Cloud, preservando a estrutura de pastas.
+
+## Funcionalidade
+
+O script realiza as seguintes etapas:
+
+1. Conecta-se ao **Google Cloud Storage** usando uma chave de autenticação da conta de serviço.
+2. Percorre recursivamente todos os arquivos e subpastas do diretório de origem.
+3. Envia cada arquivo para o bucket do GCP, criando a mesma estrutura de pastas.
+4. Registra informações detalhadas sobre o andamento do processo no console, incluindo sucessos e erros.
+
+## Pré-requisitos
+
+Antes de executar o script, você precisará de alguns recursos configurados:
+
+### 1. Google Cloud Platform (GCP)
+- **Criação do Projeto**: Crie um projeto no [Google Cloud Console](https://console.cloud.google.com/).
+- **Habilitação da API do Google Cloud Storage**: No console do GCP, ative a API do Google Cloud Storage para o seu projeto.
+- **Criação da Conta de Serviço**: 
+   - Crie uma **Conta de Serviço** para acessar os recursos do GCP.
+   - Gere a chave da conta de serviço em formato **JSON**. Essa chave será utilizada para autenticar seu script.
+### 2. Python e Dependências
+- **Python 3.x** instalado.
+- Instale as dependências do projeto executando:
+
+```bash
+pip install -r requirements.txt

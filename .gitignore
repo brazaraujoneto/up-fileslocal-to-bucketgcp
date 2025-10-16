@@ -1,0 +1,12 @@
+# Ignorar chave JSON do GCP
+/chave_gcp/innyx-tecnologia-d3ebbf5499e1.json
+
+# Ignorar arquivos Python compilados
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignorar ambientes virtuais
+venv/
+.env/
+env/
