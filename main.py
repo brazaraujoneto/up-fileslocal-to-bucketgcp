@@ -11,7 +11,7 @@ logging.basicConfig(
 def upload_to_gcp(bucket_name, source_directory, destination_folder):
     try:
         # Caminho para o arquivo de credenciais JSON
-        credentials_path = r"c:\Users\Braz.Neto\Documents\up-fileslocal-to-bucketgcp\chave_gcp\innyx-tecnologia-d3ebbf5499e1.json"
+        credentials_path = r"ADICIONE AQUI O SEU CAMINHO\seu_arquivo_de_credenciais.json"
 
         # Carrega as credenciais explicitamente e cria o cliente
         storage_client = storage.Client.from_service_account_json(credentials_path)
@@ -47,10 +47,10 @@ def upload_to_gcp(bucket_name, source_directory, destination_folder):
 
 if __name__ == "__main__":
 
-    NOME_DO_BUCKET = "temp-videos-aulas-export-mailearn"
-    DIRETORIO_ORIGEM = r"\\10.92.10.251\innyx\INNYX-STUDIO\5-STORAGE\MAILEARN"
+    NOME_DO_BUCKET = "seu-nome-do-bucket-aqui"
+    DIRETORIO_ORIGEM = r"ADICIONE AQUI O SEU CAMINHO\diretorio_origem"
 
-    PASTA_DESTINO_NO_BUCKET = "backup_estudio_mailearn"
+    PASTA_DESTINO_NO_BUCKET = "pasta_destino_no_bucket"
 
     logging.info("--- Iniciando script de upload ---")
     upload_to_gcp(NOME_DO_BUCKET, DIRETORIO_ORIGEM, PASTA_DESTINO_NO_BUCKET)
