@@ -36,5 +36,4 @@ Para rodar esta automação, você precisará configurar o ambiente no Google Cl
 
 1. Clone este repositório para a sua máquina local:
 ```bash
-git clone [https://github.com/brazaraujoneto/NOME_DO_SEU_REPOSITORIO.git](https://github.com/brazaraujoneto/NOME_DO_SEU_REPOSITORIO.git)
-cd NOME_DO_SEU_REPOSITORIO
+git clone https://github.com/brazaraujoneto/up-fileslocal-to-bucketgcp.git
